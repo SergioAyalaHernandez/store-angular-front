@@ -1,0 +1,44 @@
+<p>
+  {{nameField.value}}
+  <input type="text" [formControl]="nameField"/>
+  <button (click)="getNameValue()">get value</button>
+  <!--<code>
+    <pre>
+        {{nameField | json}}
+    </pre>
+  </code>-->
+</p>
+<p>
+  <input type="email" [formControl]="emailField" required/>
+</p>
+<p>
+  <input type="tel" [formControl]="emailField" required/>
+</p>
+<p>
+  <input type="color" [formControl]="emailField" required/>
+</p>
+<p>
+  <input type="month" [formControl]="emailField" required/>
+</p>
+<p>
+  <input type="date" [formControl]="emailField" required/>
+</p>
+<p>
+  <input type="number" [formControl]="emailField" required/>
+</p>
+<p>
+  Category: {{categoryField.value}}
+  <select [formControl]="categoryField">
+    <option value="ct-1">category 1</option>
+    <option value="ct-2">category 2</option>
+    <option value="ct-3">category 3</option>
+  </select>
+</p>
+<p>
+  Tags: {{tagFielf.value}}
+  <select [formControl]="tagFielf" multiple>
+    <option value="ct-1">tag 1</option>
+    <option value="ct-2">tag 2</option>
+    <option value="ct-3">tag 3</option>
+  </select>
+</p>
